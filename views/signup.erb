@@ -1,0 +1,150 @@
+
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100italic,400italic' rel='stylesheet' type='text/css'>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<style>
+label {
+  font-family: helvetica;
+  font-size: 10px;
+  text-align: center;
+}
+
+input {
+  border: 1px solid black;
+  padding:5px;
+  width:40%;
+  height:30px;
+  }
+
+
+textarea {
+  border: 1px solid black;
+  padding:10px;
+}
+
+.and {
+  font-size: 20px;
+  font-style: italic;
+  font-weight:100;
+}
+
+.sign-up {
+  width:100px;
+  height:100px;
+  float:left;
+  background-color:blue;
+}
+
+</style>
+
+
+</head>
+<body>
+
+
+
+
+
+<!-- <div class="container fluid"> -->
+ 
+<div id="wrapper">
+
+
+
+<div id="home" style="background-color:lightgrey;"> 
+
+
+<!--   <div class="sign-up"> </div> -->
+
+  <div id="home-text">
+  <p><img src="images/vanitylogo.png" style="width:30%"><br>
+
+
+<!--     <div id='sign-in' class="group"> -->
+
+
+  <div class="span6 clear">
+
+
+
+
+
+    <form method="POST" action="/contact-us-post" class="well">
+
+      <label for="name_input"></label>
+      <input type="text" name="name_input" class="span4" placeholder="username">
+      <span class="and"> </span>
+      <p>
+      <label for="email_input"></label>
+      <input type="text" name="email_input" class="span4" placeholder="password">
+      <p>
+<!--       <label for="name_input"></label>
+      <input type="text" name="name_input" class="span4" placeholder="email">
+      <span class="and"> </span> -->
+      <p>
+      <label for="name_input"></label>
+      <input type="text" name="name_input" class="span4" placeholder="first name">
+      <span class="and"> </span>
+      <p>
+      <label for="name_input"></label>
+      <input type="text" name="name_input" class="span4" placeholder="last name">
+      <span class="and"> </span>
+      <p>
+
+    </p>
+
+
+
+      <p>
+<!--       <label for="message_body"></label><br>
+      <textarea name="message_body" cols='100' rows="10" placeholder="about myself"></textarea><br>
+    </p> -->
+
+       <button type="submit" class="btn" value="Send" style="padding:5px; background-color:white; border:1px black solid;">go</button>
+
+
+
+
+      <br><bR><br>
+</div>
+
+  
+     
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+<script>
+
+$( document ).ready(function() {
+  $("#home-text").addClass("load");
+});
+
+</script>
+
+
+<!-- 
+<footer></footer> -->
+  
+   
+     
+</div>
+
+</body>
+</html>
