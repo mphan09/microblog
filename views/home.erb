@@ -1,0 +1,106 @@
+
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100italic,400italic' rel='stylesheet' type='text/css'>
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<style>
+label {
+  font-family: helvetica;
+  font-size: 10px;
+  text-align: center;
+}
+
+input {
+  border: 1px solid black;
+  padding:5px;
+  }
+
+
+textarea {
+  border: 1px solid black;
+  padding:10px;
+}
+
+.and {
+  font-size: 20px;
+  font-style: italic;
+  font-weight:100;
+}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+
+<!-- <div class="container fluid"> -->
+ 
+<div id="wrapper">
+<div id="home"> <div id="home-text">
+ 
+  <p><img src="images/vanitylogo.png" style="width:60%"><br>
+    <div style="margin-top:-50px">
+  A SELF PORTRAIT.  A PROJECTION. AN ANALYSIS. A THOUGHT.<br><em> AN IDEA OF SELF.</em></p>
+</div>
+
+<!--     <div id='sign-in' class="group"> -->
+
+  <div class="span6 clear">
+    <form method="POST" action="/contact-us-post" class="well">
+
+      <label for="name_input"></label>
+      <input type="text" name="name_input" class="span4" placeholder="username">
+      <span class="and"> & </span>
+
+      <label for="email_input"></label>
+      <input type="text" name="email_input" class="span4" placeholder="password">
+
+       <button type="submit" class="btn" value="Send" style="padding:5px; background-color:white; border:1px black solid;">go</button>
+
+
+      <br><bR><br>
+
+
+      <p style="font-size:12px;"><strong> <a href="signup"> sign up></a> </strong> </p>
+     
+    </form>
+  </div>
+</div>
+
+
+
+
+
+
+</div>
+</div>
+ </div>
+
+
+
+
+<script>
+
+$( document ).ready(function() {
+  $("#home-text").addClass("load");
+});
+
+</script>
+
+
+
+<!-- <footer></footer> -->
+  
+   
+     
+</div>
+
+</body>
+</html>
