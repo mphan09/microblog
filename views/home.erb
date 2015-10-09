@@ -15,18 +15,21 @@ label {
 
 input {
   border: 1px solid black;
-  padding:5px;
+  padding:10px;
+  text-align: center;
   }
 
 
 textarea {
   border: 1px solid black;
   padding:10px;
+  text-align: center;
 }
 
 .and {
-  font-size: 20px;
-  font-style: italic;
+
+  font-size: 30px;
+  font-style: italic ;
   font-weight:100;
 }
 
@@ -52,23 +55,27 @@ textarea {
 
 <!--     <div id='sign-in' class="group"> -->
 
-  <div class="span6 clear">
-    <form method="POST" action="/contact-us-post" class="well">
+<!--   <div class="span6 clear"> -->
 
-      <label for="name_input"></label>
-      <input type="text" name="name_input" class="span4" placeholder="username">
+
+
+    <form method="POST" action="/sign-in">
+
+      <label for="username"></label>
+      <input type="text" name="username" placeholder="username">
+
       <span class="and"> & </span>
 
-      <label for="email_input"></label>
-      <input type="text" name="email_input" class="span4" placeholder="password">
+      <label for="password"></label>
+      <input type="text" name="password" placeholder="password">
 
-       <button type="submit" class="btn" value="Send" style="padding:5px; background-color:white; border:1px black solid;">go</button>
+       <button type="submit" class="btn" value="go" style="padding:5px; background-color:white; border:1px black solid;">go</button>
 
 
       <br><bR><br>
 
 
-      <p style="font-size:12px;"><strong> <a href="signup"> sign up></a> </strong> </p>
+      <p style="font-size:12px;"><strong> <a href="signup"> sign up > </a> </strong> </p>
      
     </form>
   </div>
