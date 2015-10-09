@@ -4,19 +4,23 @@
 require 'sinatra'
 
   get '/' do    
-   erb :home, :layout => false
+    erb :home, :layout => false
   end
 
-   get '/signup' do    
-   erb :signup, :layout => false
+  get '/signup' do    
+    erb :signup, :layout => false
   end
 
   get '/mainpage' do    
-   erb :mainpage
+    erb :mainpage
   end
 
- get '/profile' do    
-   erb :profile
+  get '/profile' do    
+    erb :profile
+  end
+  
+  get '/editprofile' do
+    erb :editprofile
   end
 
 

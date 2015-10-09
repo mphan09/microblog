@@ -1,4 +1,3 @@
-
 <html>
 <head>
   <title></title>
@@ -12,36 +11,37 @@ label {
   font-size: 10px;
   text-align: center;
 }
-
 input {
   border: 1px solid black;
   padding:5px;
+  height: 30px;
+  width: 150px;
+  line-height: 10px;
   }
-
-
 textarea {
   border: 1px solid black;
   padding:10px;
 }
-
 .and {
   font-size: 20px;
   font-style: italic;
   font-weight:100;
 }
 
-
-
+.submit {
+  padding:5px; 
+  background-color:white; 
+  border:1px black solid;
+  height: 30px;
+  width: 30px;
+  line-height: 10px;
+}
 </style>
-
-
-
 </head>
+
 <body>
 
-
 <!-- <div class="container fluid"> -->
- 
 <div id="wrapper">
 <div id="home"> <div id="home-text">
  
@@ -62,11 +62,9 @@ textarea {
       <label for="email_input"></label>
       <input type="text" name="email_input" class="span4" placeholder="password">
 
-       <button type="submit" class="btn" value="Send" style="padding:5px; background-color:white; border:1px black solid;">go</button>
-
+       <button type="submit" class="btn submit" value="Send">go</button>
 
       <br><bR><br>
-
 
       <p style="font-size:12px;"><strong> <a href="signup"> sign up></a> </strong> </p>
      
