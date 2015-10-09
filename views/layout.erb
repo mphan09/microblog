@@ -27,6 +27,21 @@
     <div class="air">
     <p><br><img src="images/vanitylogo.png"></p>
     <p>a self portrait. a projection. an analysis. a thought.<br><em> an idea of self.</em></p>
+    
+
+  <% if flash[:notice] %>
+    <h1 class="flash-notice">
+      <%= flash[:notice] %>
+    </h1>
+  <% end %>
+  <% if flash[:alert] %>
+    <h1 class="flash-alert">
+      <%= flash[:alert] %>
+    </h1>
+  <% end %>
+
+
+
     </div>
   </div>
 
