@@ -1,8 +1,7 @@
 source 'http://rubygems.org'   
-ruby '2.2.1'
+ruby '2.2.3'
  
 gem 'sinatra' 
-
 gem 'activerecord'
 gem 'rack-flash'
 gem 'sinatra-activerecord'

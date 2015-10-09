@@ -1,18 +1,15 @@
-class CreateUsersTable < ActiveRecord::Migration
- 
-      def change
-        
+class Blogtable < ActiveRecord::Migration
+  def change     
       create_table :users do |t|
           t.string :username
+          t.string :email
           t.string :password
           t.string :fname
           t.string :lname
-          t.string :info
       end
       
       create_table :profiles do |t|
           t.integer :user_id
-          t.string :info
       end
       
       create_table :posts do |t|
