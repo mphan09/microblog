@@ -1,8 +1,12 @@
+
+
+
+
 require 'sinatra' 
 require 'sinatra/activerecord'
-require './models'
+# require './models'
 
-set :database, "sqlite3:exercise2.sqlite3"
+# set :database, "sqlite3:exercise2.sqlite3"
 
 get "/" do
  "asdas"

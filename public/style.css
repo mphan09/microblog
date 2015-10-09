@@ -1,5 +1,7 @@
 
+
 @import url(https://fonts.googleapis.com/css?family=Lato:300,100italic,300italic,400);
+
 
 header {
   font-family: 'Lato', sans-serif;
@@ -11,6 +13,7 @@ header {
   position:fixed;
   border-bottom: 1px solid black;
 }
+
 .nav div {
   /*margin-top:50px;*/
   height: 275px;
@@ -28,26 +31,32 @@ header {
   font-family: 'Lato', 'times' sans-serif;
   text-transform: uppercase;
 }
+
 .nav div:hover {
   background-color: lightgray;
 }
 .linkleft div {
   border-right:1px dashed black;
 }
+
 a:link, a:visited, a:active  {
     color:#000;
     text-decoration:none;
 }
+
 a:hover {
 /*    color: ;*/
     text-decoration:line-through;
 }
+
 .air {
   padding: 10px;
 }
 div img {
   max-width: 100%;
 }
+
+
 footer {
   background-color:#fff;
   width:100%;
@@ -56,13 +65,16 @@ footer {
   text-align: center;
   border-top:solid 1px black;
 }
+
 .gutter {
   width:80%;
   padding:20px 10%;
 }
+
 #wrapper {
     width: 100%;
 }
+
 #home {
     background-color:pink;
     background-image: url("placeholder.jpg"); 
@@ -71,6 +83,7 @@ footer {
     width:100%;
     display: block;
 }
+
 #home-text {
     position: relative;
     top: 47%;
@@ -90,9 +103,13 @@ footer {
     -ms-transition: opacity 2s ease-in;
     transition: opacity 2s ease-in;
 }
+
+
 #home-text.load {
     opacity: 1;
 }
+
+
 .post {
   border-bottom: 1px black solid;
   padding: 20px;
@@ -101,9 +118,11 @@ footer {
 clear:both;
   ;
 }
+
 .post img {
   width: 70%;
 }
+
 .post-info {
   width:20%;
   border:1px black dashed;
@@ -111,20 +130,24 @@ clear:both;
   float:left;
   margin-right:20px;
 }
+
 /*---------------------*/
+
+
 .profile {
   border: 1px black solid;
   height:350px;
-/*  padding: 10px;*/
-   margin:20px;
-clear:both;
-  ;
+  /* padding: 10px;*/
+  margin:20px;
+  clear:both;
 }
+
 .profile img {
   margin:20px;
   width: 30%;
   float:left;
 }
+
 .profile-info {
   padding:50px;
   margin:10px;
@@ -134,6 +157,7 @@ clear:both;
   float:left;
   margin-right:20px;
 }
+
 #content {
   font-family: "Lato";
   border:1px black solid;
@@ -168,8 +192,8 @@ textarea {
   float:left;
   background-color:blue;
 }
-
-
-
-
-
+#content {
+  font-family: "Lato";
+  border:1px black solid;
+  clear:both;
+} 
