@@ -11,6 +11,14 @@ enable :sessions
    erb :home, :layout => false
   end
 
+  get "/users/:id/follow" do
+  user = User.find(params[:id])
+  current_user.follow!(user) if user
+  flash[:notice] = "User followed successfully."
+  redirect "/"
+end
+
+
 
   post "/" do
     @user = User.where(email: params[:email]).first
@@ -79,7 +87,6 @@ end
 
 
 
-
   get '/mainpage' do    
    erb :mainpage
   end
@@ -91,10 +98,6 @@ end
   get '/editprofile' do
     erb :editprofile
   end
-
-
-
-
 
 
 # HTTP GET method and "/posts/new" action route

@@ -18,9 +18,5 @@ class Blogtable < ActiveRecord::Migration
           t.string :body
           t.datetime :posted_on
       end
-      create_table :follows do |t|
-        t.integer :follower_id
-        t.integer :followee_id
-      end
   end
 end

@@ -2,6 +2,8 @@ class User < ActiveRecord::Base
    has_many :posts
    has_one :profile
    has_many :posts
+   has_many :relationships, foreign_key: :follower_id
+   has_many :followed, through: :relationships, source: :followed
 end
 
 class Profile < ActiveRecord::Base
@@ -10,6 +12,10 @@ end
 
 class Post < ActiveRecord::Base
    belongs_to :user
+end
+
+class Relationship < ActiveRecord::Base
+belongs_to :followed, class_name: 'User'
 end
 
 # class UsersController < ApplicationController
