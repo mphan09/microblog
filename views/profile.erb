@@ -14,7 +14,14 @@
   <img src="images/circle.jpg"> 
   <div class="profile-info"> 
     <em>about me</em> <br>
-    <strong> firstname lastname </strong>
+    <strong> 
+
+
+		<% @users.each do |user| %>
+		  Name: <%= user.username %>
+		<% end %> 
+
+</strong>
 
   <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,

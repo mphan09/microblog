@@ -25,33 +25,26 @@
 
 <!--     <div id='sign-in' class="group"> -->
 
-  <div class="span6 clear">
 
 
 
 
-<form accept-charset="UTF-8" action="/sign-up-post" class="new_user"
-      id="new_user" method="post">
-  <input name="utf8" type="hidden" value="&#x2713;" />
-  <input name="authenticity_token" type="hidden"
-         value="NNb6+J/j46LcrgYUC60wQ2titMuJQ5lLqyAbnbAUkdo=" />
-  <label for="user_name">Name</label>
-  <input id="user_name" name="user[name]" type="text" />
+<form  action="/signup" class="new_user" method="post">
 
-  <p><label for="user_email">Last Name</label>
-  <input id="user_email" name="user[email]" type="email" /></p>
 
-  <p><label for="user_password">Password</label>
-  <input id="user_password" name="user[password]"
-         type="password" /></p>
 
-  <p><label for="user_password_confirmation">Password Confirmation</label>
-  <input id="user_password_confirmation"
-         name="user[password_confirmation]" type="password" /></p>
+ <!--  <label for="user_name">username</label> -->
+  <p><input  name="username" type="text" placeholder="username" /></p>
 
-  <p><input class="btn btn-primary" name="commit" type="submit"
-         value="Create my account" /></p>
-</form>
+  <!-- <p><label for="user_email">email</label> -->
+ <p> <input  name="email" type="email"  placeholder="email"/></p>
+
+ <!--  <p><label for="user_password">password</label> -->
+  <p> <input  name="password" type="password" placeholder="password"/></p>
+
+
+  <p><input type="submit" value="Create my account" /></p>
+</form>s
 
 
 
