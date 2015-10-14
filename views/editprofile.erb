@@ -6,22 +6,73 @@
 </head>
 <body>
 
-	
-	<div class="editprofile">  
-	
+<style>
+.aboutme {
+  font-size: 20px;
+  font-style: italic;
+  font-weight:100;
+  height: 40px;
+  width: 400px;
+}
+.flname {
+  height: 40px;
+  width: 400px;
+}
+.submit {
+  padding:5px; 
+  background-color:white; 
+  border:1px black solid;
+  height: 30px;
+  width: 100px;
+  line-height: 10px;
+}
+.delete {
+  padding:5px; 
+  background-color:white; 
+  border:1px black solid;
+  height: 40px;
+  width: 200px;
+  line-height: 10px;
+}
+.textarea1 {
+  height: 200px;
+  width: 400px;
+}
+.textarea2 {
+  height: 30px;
+  width: 400px;
+}
+</style>
+
+</head>
+<body>
+
+	<center>
+	  
+    <div class="editprofile">  
+	  <p></p>
   	<img src="images/circle.jpg"> 
   	<div class="edit-profile-info"> 
-    <p><em>about me</em> <br></p>
-    <strong> firstname lastname </strong>
+    <p>About Me<br></p>
 
-  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p></div> </div>
+    <textarea class="textarea1"></textarea>
 
+    <p></p>
+    <button type="submit" class="btn submit" value="Submit">SUBMIT</button>
+    <p></p>
 
+    <strong> First & Last Name </strong>
+
+    <p><textarea class="textarea2"></textarea></p>
+
+    <button type="submit" class="btn submit" value="Submit">SUBMIT</button>
+
+  <p> To permanently delete your profile, click on the button below. </p></div> </div>
+
+<button type="submit" class="btn delete" value="Delete">DELETE PROFILE</button>
+<p></p>
+
+</center>
 </body>
 </html>
 

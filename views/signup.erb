@@ -6,6 +6,7 @@
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
+
 <body>
 
 <!-- <div class="container fluid"> -->
@@ -23,28 +24,17 @@
 
   <div class="span6 clear">
 
-    <form method="POST" action="/contact-us-post" class="well">
 
-      <label for="name_input"></label>
-      <input type="text" name="name_input" class="span4" placeholder="username">
-      <span class="and"> </span>
-      <p>
-      <label for="email_input"></label>
-      <input type="text" name="email_input" class="span4" placeholder="password">
-      <p>
-<!--       <label for="name_input"></label>
-      <input type="text" name="name_input" class="span4" placeholder="email">
-      <span class="and"> </span> -->
-      <p>
-      <label for="name_input"></label>
-      <input type="text" name="name_input" class="span4" placeholder="first name">
-      <span class="and"> </span>
-      <p>
-      <label for="name_input"></label>
-      <input type="text" name="name_input" class="span4" placeholder="last name">
-      <span class="and"> </span>
-      <p>
 
+<form action="/signup" class="new_user" method="post">
+  <!--  <label for="user_name">username</label> -->
+  <p><input  name="username" type="text" placeholder="username" /></p>
+  <!-- <p><label for="user_email">email</label> -->
+  <p> <input  name="email" type="email"  placeholder="email"/></p>
+  <!--  <p><label for="user_password">password</label> -->
+  <p> <input  name="password" type="password" placeholder="password"/></p>
+  <p><input type="submit" value="create my account" /></p>
+</form>
      </p>
 
       <p>
@@ -64,7 +54,9 @@
 
 </div>
 </div>
-</div>
+
+
+
 
 <script>
 $( document ).ready(function() {

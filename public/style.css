@@ -42,6 +42,7 @@ a:hover {
 /*    color: ;*/
     text-decoration:line-through;
 }
+
 .air {
   padding: 10px;
 }
@@ -112,13 +113,13 @@ clear:both;
   margin-right:20px;
 }
 /*---------------------*/
+
 .profile {
   border: 1px black solid;
   height:350px;
-/*  padding: 10px;*/
-   margin:20px;
-clear:both;
-  ;
+  /* padding: 10px;*/
+  margin:20px;
+  clear:both;
 }
 .profile img {
   margin:20px;
@@ -133,6 +134,7 @@ clear:both;
   border:1px black dashed;
   float:left;
   margin-right:20px;
+
 }
 #content {
   font-family: "Lato";
@@ -168,8 +170,3 @@ textarea {
   float:left;
   background-color:blue;
 }
-
-
-
-
-

@@ -1,4 +1,5 @@
 <html>
+
 <head>
   <title></title>
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -39,11 +40,13 @@ textarea {
 </style>
 </head>
 
+
 <body>
 
 <!-- <div class="container fluid"> -->
+
 <div id="wrapper">
-<div id="home"> <div id="home-text">
+  <div id="home"> <div id="home-text">
  
   <p><img src="images/vanitylogo.png" style="width:60%"><br>
     <div style="margin-top:-50px">
@@ -52,19 +55,18 @@ textarea {
 
 <!--     <div id='sign-in' class="group"> -->
 
+
   <div class="span6 clear">
-    <form method="POST" action="/contact-us-post" class="well">
+    
+    <form method="POST" action="/sign-in" class="well">
 
-      <label for="name_input"></label>
-      <input type="text" name="name_input" class="span4" placeholder="username">
-      <span class="and"> & </span>
 
-      <label for="email_input"></label>
-      <input type="text" name="email_input" class="span4" placeholder="password">
+      <input name="username" type="text" placeholder="username"/>
+
 
        <button type="submit" class="btn submit" value="Send">go</button>
-
-      <br><bR><br>
+      
+      <span class="and"> & </span>
 
       <p style="font-size:12px;"><strong> <a href="signup"> sign up></a> </strong> </p>
      
@@ -72,14 +74,26 @@ textarea {
   </div>
 </div>
 
+  <input  name="password" type="password" placeholder="password"/>
+
+
+       <button type="submit" class="btn submit" value="Send">go</button>
 
 
 
+      <br><br><br>
 
+
+      <p style="font-size:12px;"><strong> <a href="signup">sign up></a> </strong> </p>
+     
+
+    </form>
 
 </div>
 </div>
- </div>
+</div>
+</div>
+</div>
 
 
 
@@ -99,6 +113,5 @@ $( document ).ready(function() {
    
      
 </div>
-
 </body>
 </html>
