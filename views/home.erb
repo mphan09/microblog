@@ -1,5 +1,4 @@
 <html>
-
 <head>
   <title></title>
   <link rel="stylesheet" type="text/css" href="style.css">
@@ -14,39 +13,31 @@ label {
 }
 input {
   border: 1px solid black;
-  padding:5px;
-  height: 30px;
-  width: 150px;
-  line-height: 10px;
+  padding:10px;
+  text-align: center;
   }
 textarea {
   border: 1px solid black;
   padding:10px;
+  text-align: center;
 }
 .and {
-  font-size: 20px;
-  font-style: italic;
+  font-size: 30px;
+  font-style: italic ;
   font-weight:100;
 }
-
-.submit {
-  padding:5px; 
-  background-color:white; 
-  border:1px black solid;
-  height: 30px;
-  width: 30px;
-  line-height: 10px;
-}
 </style>
+
+
+
 </head>
-
-
 <body>
 
-<!-- <div class="container fluid"> -->
 
+<!-- <div class="container fluid"> -->
+ 
 <div id="wrapper">
-  <div id="home"> <div id="home-text">
+<div id="home"> <div id="home-text">
  
   <p><img src="images/vanitylogo.png" style="width:60%"><br>
     <div style="margin-top:-50px">
@@ -55,55 +46,48 @@ textarea {
 
 <!--     <div id='sign-in' class="group"> -->
 
-
-  <div class="span6 clear">
-    
-    <form method="POST" action="/sign-in" class="well">
+<!--   <div class="span6 clear"> -->
 
 
-      <input name="username" type="text" placeholder="username"/>
 
+    <form method="POST" action="/sign-in">
 
-       <button type="submit" class="btn submit" value="Send">go</button>
-      
+      <label for="username"></label>
+      <input type="text" name="username" placeholder="username">
+
       <span class="and"> & </span>
 
-      <p style="font-size:12px;"><strong> <a href="signup"> sign up></a> </strong> </p>
+      <label for="password"></label>
+      <input type="text" name="password" placeholder="password">
+
+       <button type="submit" class="btn" value="go" style="padding:5px; background-color:white; border:1px black solid;">go</button>
+
+
+      <br><bR><br>
+
+
+      <p style="font-size:12px;"><strong> <a href="signup"> sign up > </a> </strong> </p>
      
     </form>
   </div>
 </div>
 
-  <input  name="password" type="password" placeholder="password"/>
-
-
-       <button type="submit" class="btn submit" value="Send">go</button>
 
 
 
-      <br><br><br>
 
-
-      <p style="font-size:12px;"><strong> <a href="signup">sign up></a> </strong> </p>
-     
-
-    </form>
 
 </div>
 </div>
-</div>
-</div>
-</div>
+ </div>
 
 
 
 
 <script>
-
 $( document ).ready(function() {
   $("#home-text").addClass("load");
 });
-
 </script>
 
 
@@ -113,5 +97,6 @@ $( document ).ready(function() {
    
      
 </div>
+
 </body>
 </html>

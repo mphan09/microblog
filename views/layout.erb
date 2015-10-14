@@ -1,4 +1,3 @@
-
 <html>
 <head>
   <title></title>
@@ -12,9 +11,7 @@
 
 
 <a href="mainpage">
-
   <div class="nav" title="">
-
       <div class="air">
 
       <img src="images/homeicon.png">
@@ -24,11 +21,12 @@
     </div>
   </a>
 
+
+  <div class="nav" title="">
     <div class="air">
     <p><br><img src="images/vanitylogo.png"></p>
     <p>a self portrait. a projection. an analysis. a thought.<br><em> an idea of self.</em></p>
-    <a href="/logout">Logout</a> 
-    
+    <button><a href="/logout">LOGOUT</a></button>
 
   <% if flash[:notice] %>
     <h1 class="flash-notice">
@@ -40,13 +38,15 @@
       <%= flash[:alert] %>
     </h1>
   <% end %>
+
+
+
+    </div>
   </div>
 
 
 <a href="profile">
-
   <div class="nav linkleft">
-
     <div class="air">
       <img src="images/selfieicon.png">
       <p>profile</p>
