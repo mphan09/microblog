@@ -1,0 +1,22 @@
+<ul>
+<div class="users">  
+  <% @users.each do |user| %>
+    <h2><strong>Id:</strong> <%= user.id %></h2>
+    <li><strong>Email:</strong> <%= user.email %></li>
+    <!-- 
+      this is where we determine whether to display the follow
+      anchor or the unfollow anchor, we decided this based on
+      whether the follower_id is equal to the logged in user's id
+      and the followee_id is equal to the iterating user's id
+    -->
+    <% if current_user.followees.where(follows: { followee_id: user.id }).empty? %>
+      <!-- if you are not following this user then display a follow link -->
+   <p>   <li><a href="/users/<%= user.id %>/follow">Follow</a></li>
+    <% else %>
+      <!-- if you are following this user then display a unfollow link -->
+   <p>   <li><a href="/users/<%= user.id %>/unfollow">Unfollow</a></li> </p>
+    <% end %>
+  
+  <% end %>
+  </div>
+</ul>

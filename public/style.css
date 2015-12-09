@@ -14,7 +14,7 @@ header {
 
 .nav div {
   /*margin-top:50px;*/
-  height: 275px;
+  height: 300px;
   width:31%;
   float:left;
   background: #fff;
@@ -30,8 +30,12 @@ header {
   text-transform: uppercase;
 }
 
-.nav div:hover {
-  background-color: lightgray;
+.side img {
+  padding-top: 20px;
+}
+
+.side div:hover {
+  background-color: #efefef;
 }
 .linkleft div {
   border-right:1px dashed black;
@@ -44,12 +48,18 @@ a:link, a:visited, a:active  {
 
 a:hover {
 /*    color: ;*/
-    text-decoration:line-through;
+    text-decoration:none;
 }
 
 .air {
   padding: 10px;
 }
+
+.air p {
+  font-weight: 400;
+  font-size: 12px;
+}
+
 div img {
   max-width: 100%;
 }
@@ -123,21 +133,28 @@ clear:both;
 
 .post-info {
   width:20%;
-  border:1px black dashed;
-  height:200px;
+/*  border:1px black dashed;*/
+/*  height:50px;*/
   float:left;
   margin-right:20px;
+
 }
 
 /*---------------------*/
 
 
 .profile {
-  border: 1px black solid;
-  height:350px;
+/*  border: 1px black solid;*/
+  height:250px;
   /* padding: 10px;*/
   margin:20px;
-  clear:both;
+
+}
+
+.users {
+/*  border: 1px black solid;*/
+   padding: 20px;
+  margin:20px;
 }
 
 .profile img {
@@ -149,9 +166,9 @@ clear:both;
 .profile-info {
   padding:50px;
   margin:10px;
-  width:50%;
-  height:200px;
-  border:1px black dashed;
+  width:90%;
+  height:100px;
+/*  border:1px black dashed;*/
   float:left;
   margin-right:20px;
 }
@@ -166,12 +183,11 @@ clear:both;
 label {
   font-family: helvetica;
   font-size: 10px;
-  text-align: center;
 }
 input {
   border: 1px solid black;
   padding:5px;
-  width:40%;
+  width:200px;
   height:30px;
   text-align: center;
   }
@@ -195,3 +211,73 @@ textarea {
   border:1px black solid;
   clear:both;
 } 
+
+.submit {
+  padding:5px; 
+  background-color:white; 
+  border:1px black solid;
+}
+
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+/*nav {
+  margin: 10 0 20px;
+}
+
+nav a {
+  display: inline-block;
+  margin: 0 10px;
+}*/
+
+h2 {
+  border-bottom: 1px solid black;
+}
+
+strong {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+li {
+  list-style: none;
+  padding-left: 10px;
+}
+
+.flash {
+  border-radius: 4px;
+  color: black;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.flash-info {
+  border:1px black dashed;
+}
+
+.flash-alert {
+  border:1px black dashed;
+}
+
+button {
+  background-color: transparent;
+  width:28%;
+  height:28%;
+  border:1px black solid;
+  margin-bottom:2px;
+}
+
+button:hover {
+  background-color: #efefef;
+
+}
+
+.tiny {
+  font-size:8px;
+}

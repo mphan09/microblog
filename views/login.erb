@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>Vanity</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper">
+  <div id="home"> 
+    <div id="home-text">
+ 
+    <img src="images/vanitylogo.png" style="width:60%"><br>
+    <div style="margin-top:-30px">
+      <form method="POST" action="/login">
+        <input type="text" name="email" placeholder="email">
+        <span class="and"> & </span>
+        <input type="password" name="password" placeholder="password">
+        <input type="submit" value="go" class="submit">
+      </form>
+    </div>
+    <p style="font-size:12px; margin-top:100px;"><a href="signup"> sign up > </a> </p>    
+    </div>
+  </div>
+</div>
+
+<script>
+$( document ).ready(function() {
+  $("#home-text").addClass("load");
+});
+</script>
+
+</body>
+</html>
+

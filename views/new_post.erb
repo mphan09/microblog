@@ -1,0 +1,12 @@
+<h1>New Post Form</h1>
+<!--
+  this is the new post form 
+  pay special attention to the method and action attributes
+  method="POST" and action="/posts" means it will go to the
+  post "/posts" route defined in the app.rb file
+ -->
+<form method="POST" action="/posts">
+  <label for="body">Body</label>
+  <textarea name="body"></textarea>
+  <input type="submit" value="Create Post">
+</form>

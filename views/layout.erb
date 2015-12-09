@@ -1,82 +1,58 @@
 <html>
 <head>
-  <title></title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100italic,400italic' rel='stylesheet' type='text/css'>
+  <title>Vanity</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <body>
 
+<div class="gutter"> 
 
-<div class="gutter">   <!-- gutter start -->
+  <% if flash[:info] %>
+    <div class="flash flash-info">
+      <%= flash[:info] %>
+    </div>
+  <% end %>
+  <% if flash[:alert] %>
+   <div class="flash flash-alert">
+      <%= flash[:alert] %>
+    </div>
+  <% end %>
 
+  <a href="/posts/all">
+    <div class="nav side">
+        <div class="air">
+          <img src="../images/homeicon.png">
+          <p>index</p>
+        </div>
+    </div>
+  </a>
 
-<a href="mainpage">
   <div class="nav" title="">
+    <div class="air" style="overflow:hidden;">
+      <img src="../images/vanitylogo.png">
+      <a href="/logout"><button> <i class="material-icons">lock_outline</i><br><br><span class="tiny">LOGOUT</span></button></a>
+      <a href="/posts"><button><i class="material-icons">keyboard</i><br><br><span class="tiny"> POSTS</span></button></a>
+      <a href="/posts/followers"><button><i class="material-icons">filter</i><br><br><span class="tiny">INDEX</span></button></a>
+      <a href="/users/all"><button><i class="material-icons">group</i><br><br><span class="tiny">USERS</span></button></a>
+      <a href="/followers"><button><i class="material-icons">group</i><br><br><span class="tiny">FOLLOWERS</span></button></a>
+      <a href="/followees"><button><i class="material-icons">people_outline</i><br><br><span class="tiny">FOLLOWING</span></button></a>
+    </div>
+  </div>
+
+
+  <a href="/index">
+    <div class="nav side linkleft">
       <div class="air">
-
-      <img src="images/homeicon.png">
-      <p>index</p>
-
+        <img src="../images/selfieicon.png">
+        <p>profile</p>
       </div>
     </div>
   </a>
 
-
-  <div class="nav" title="">
-    <div class="air">
-    <p><br><img src="images/vanitylogo.png"></p>
-    <p>a self portrait. a projection. an analysis. a thought.<br><em> an idea of self.</em></p>
-    <button><a href="/logout">LOGOUT</a></button>
-
-  <% if flash[:notice] %>
-    <h1 class="flash-notice">
-      <%= flash[:notice] %>
-    </h1>
-  <% end %>
-  <% if flash[:alert] %>
-    <h1 class="flash-alert">
-      <%= flash[:alert] %>
-    </h1>
-  <% end %>
-
-
-
-    </div>
-  </div>
-
-
-<a href="profile">
-  <div class="nav linkleft">
-    <div class="air">
-      <img src="images/selfieicon.png">
-      <p>profile</p>
-    </div>
-  </div>
-</a>
-
-
-
-
 <div id="content">
-
-
-<%= yield %>
-
-
- </content>
-
-
-
-
+  <%= yield %>
 </div>
-</div>
-
-
-<!-- 
-<footer></footer> -->
-  
-   
-    
 </div>
 
 </body>

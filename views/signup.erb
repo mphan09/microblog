@@ -1,60 +1,26 @@
 <html>
 <head>
-  <title></title>
+   <title>Vanity</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <link href='https://fonts.googleapis.com/css?family=Lato:400,300italic,300,100italic,400italic' rel='stylesheet' type='text/css'>
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
-
 <body>
 
-<!-- <div class="container fluid"> -->
- 
 <div id="wrapper">
-
-<div id="home" style="background-color:lightgrey;"> 
-
-<!--   <div class="sign-up"> </div> -->
-
-  <div id="home-text">
-  <p><img src="images/vanitylogo.png" style="width:30%"><br>
-
-<!--     <div id='sign-in' class="group"> -->
-
-  <div class="span6 clear">
-
-
-
-<form action="/signup" class="new_user" method="post">
-  <!--  <label for="user_name">username</label> -->
-  <p><input  name="username" type="text" placeholder="username" /></p>
-  <!-- <p><label for="user_email">email</label> -->
-  <p> <input  name="email" type="email"  placeholder="email"/></p>
-  <!--  <p><label for="user_password">password</label> -->
-  <p> <input  name="password" type="password" placeholder="password"/></p>
-  <p><input type="submit" value="create my account" /></p>
-</form>
-     </p>
-
-      <!-- <p> -->
-<!--       <label for="message_body"></label><br>
-      <textarea name="message_body" cols='100' rows="10" placeholder="about myself"></textarea><br>
-    </p> -->
-
-      <br><bR><br>
-</div>
-     
-    </form>
+  <div id="home" style="background-color:lightgrey;"> 
+    <div id="home-text">
+      <img src="images/vanitylogo.png" style="width:30%"><br>
+      <div class="span6 clear">
+        <form method="POST" action="/signup">
+          <input type="text" name="email" placeholder="email">
+          <input type="password" name="password" placeholder="password">
+          <input type="submit" value="Create Account">
+        </form>
+      </div>
+    </div>
   </div>
 </div>
-
-
-</div>
-</div>
-
-
-
 
 <script>
 $( document ).ready(function() {
@@ -62,7 +28,6 @@ $( document ).ready(function() {
 });
 </script>
 
-<!-- <footer></footer> -->
      
 </div>
 </body>

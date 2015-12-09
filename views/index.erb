@@ -1,0 +1,13 @@
+<div class="profile">  
+    <div class="profile-info"> 
+      <% if current_user %>
+        <h2>About Me:</h2>
+        <ul>
+          <li><strong>Email:</strong> <%= current_user.email %></li>
+          <li><strong>Password:</strong> <%= current_user.password %></li>
+        <ul>
+      <% else %>
+        You must login or signup before accessing this site
+      <% end %>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     activemodel (4.2.4)
       activesupport (= 4.2.4)
@@ -20,8 +20,6 @@ GEM
     json (1.8.3)
     minitest (5.8.1)
     rack (1.6.4)
-    rack-flash (0.1.2)
-      rack
     rack-protection (1.5.3)
       rack
     rake (10.4.2)
@@ -44,8 +42,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord
-  rack-flash
   rake
   sinatra
   sinatra-activerecord

@@ -1,2 +1,0 @@
-# microblog
-Microblog Project
